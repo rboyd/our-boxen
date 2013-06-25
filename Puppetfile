@@ -35,3 +35,13 @@ github "sudo",       "1.0.0"
 # https://github.com/boxen.
 
 github "spotify",    "1.0.0"
+github "iterm2",     "1.0.2"
+github "slate",      "1.0.0"
+github "chrome",     "1.1.0"
+github "osx",        "1.3.0"
+github "zsh",        "1.0.0"
+github "emacs",      "1.1.0"
+github "onepassword",  "1.0.1"
+github "tmux",       "1.0.2"
+github "dropbox",    "1.1.0"
+github "alfred",     "1.1.1"
