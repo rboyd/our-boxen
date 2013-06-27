@@ -9,4 +9,6 @@ class people::rboyd {
   include tmux
   include dropbox
   include alfred
+  include vagrant
+  include virtualbox
 }
