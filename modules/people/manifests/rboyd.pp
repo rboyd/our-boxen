@@ -11,6 +11,8 @@ class people::rboyd {
   include alfred
   include vagrant
   include virtualbox
+  include java
+  include clojure
 
   $home = "/Users/${::boxen_user}"
   $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
