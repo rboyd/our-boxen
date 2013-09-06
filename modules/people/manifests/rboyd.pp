@@ -13,6 +13,7 @@ class people::rboyd {
   include virtualbox
   include java
   include clojure
+  include skype
 
   $home = "/Users/${::boxen_user}"
   $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
@@ -48,6 +49,12 @@ class people::rboyd {
   file { "${home}/.emacs.d":
     ensure  => link,
     target  => "${dotfiles_dir}/.emacs.d",
+    require => Repository[$dotfiles_dir]
+  }
+
+  file { "${home}/.oh-my-zsh":
+    ensure  => link,
+    target  => "${dotfiles_dir}/.oh-my-zsh",
     require => Repository[$dotfiles_dir]
   }
 }
